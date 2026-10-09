@@ -10,6 +10,7 @@ langchain-tavily
 langchain-mistralai
 
 # Web Search / Scraping
+tavily-python
 beautifulsoup4
 requests
 
