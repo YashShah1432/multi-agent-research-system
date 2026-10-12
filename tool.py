@@ -1,7 +1,6 @@
 from langchain.tools import tool
 from tavily import TavilyClient
 from bs4 import BeautifulSoup
-from rich import print
 import os
 import requests
 from dotenv import load_dotenv
@@ -23,7 +22,6 @@ def web_search(query: str) -> str:
 
     return "\n\n----\n\n".join(out)
 
-response = web_search.invoke("Latest news about US Iran war")
 
 soups = []
 @tool
